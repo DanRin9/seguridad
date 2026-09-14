@@ -1,0 +1,330 @@
+[
+  {
+    "id": 1,
+    "nombre": "Manejo de derrames de sustancias quimicas",
+    "imagen": "https://picsum.photos/seed/derrames/400/260",
+    "nivelRiesgo": "alto",
+    "descripcion": "Procedimiento para contener, neutralizar y reportar derrames de acidos, bases y solventes organicos dentro de la campana o en superficie abierta.",
+    "eppRequeridos": "Bata, guantes de nitrilo, gafas de seguridad, mascara con filtro para vapores organicos",
+    "incidentes": [
+      {
+        "id": 1,
+        "fecha": "2026-08-10",
+        "hora": "14:30",
+        "laboratorio": "Quimica Analitica",
+        "tipo": "Derrame de sustancia quimica",
+        "descripcion": "Derrame de acido nitrico al 65 % durante el trasvase a un balon aforado. La estudiante sufrio quemadura quimica en el antebrazo derecho y fue trasladada al centro medico universitario.",
+        "heridos": true,
+        "estado": "abierto",
+        "prioridad": "critica",
+        "accionesCorrectivas": [
+          {
+            "id": 1,
+            "descripcion": "Recertificar la ducha de emergencia y el lavaojos, y reponer el kit de derrames de acidos del laboratorio.",
+            "responsable": "Julian Mendoza",
+            "fechaLimite": "2026-08-12",
+            "estado": "vencida"
+          },
+          {
+            "id": 2,
+            "descripcion": "Dictar capacitacion obligatoria de trasvase de acidos concentrados a todo el grupo de Quimica Analitica.",
+            "responsable": "Sandra Piedrahita",
+            "fechaLimite": "2026-09-05",
+            "estado": "pendiente"
+          },
+          {
+            "id": 3,
+            "descripcion": "Reemplazar los balones aforados sin base antideslizante en los cuatro mesones de trasvase.",
+            "responsable": "Andres Cifuentes",
+            "fechaLimite": "2026-09-15",
+            "estado": "pendiente"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "fecha": "2026-08-08",
+        "hora": "16:40",
+        "laboratorio": "Quimica Organica",
+        "tipo": "Derrame de sustancia quimica",
+        "descripcion": "Un frasco de cloroformo se rompio al caer de la estanteria de solventes, que no tiene bandeja de contencion. Sin personas afectadas, ventilacion forzada por dos horas.",
+        "heridos": false,
+        "estado": "abierto",
+        "prioridad": "grave",
+        "accionesCorrectivas": [
+          {
+            "id": 4,
+            "descripcion": "Instalar bandejas de contencion bajo la estanteria de solventes y reubicar los inflamables al armario ventilado.",
+            "responsable": "Sandra Piedrahita",
+            "fechaLimite": "2026-08-13",
+            "estado": "vencida"
+          },
+          {
+            "id": 5,
+            "descripcion": "Anclar a la pared las tres estanterias de reactivos que no tienen sujecion.",
+            "responsable": "Ricardo Beltran",
+            "fechaLimite": "2026-09-10",
+            "estado": "pendiente"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "fecha": "2026-08-05",
+        "hora": "10:20",
+        "laboratorio": "Fisicoquimica",
+        "tipo": "Exposicion a reactivo",
+        "descripcion": "Un estudiante manipulo hidroxido de sodio en escamas sin gafas de seguridad y recibio salpicadura cerca del ojo izquierdo. Se aplico lavado ocular por quince minutos sin lesion.",
+        "heridos": true,
+        "estado": "abierto",
+        "prioridad": "grave",
+        "accionesCorrectivas": [
+          {
+            "id": 6,
+            "descripcion": "Instalar dispensador de gafas de seguridad en la entrada del laboratorio y exigir su uso para ingresar.",
+            "responsable": "Marcela Ospina",
+            "fechaLimite": "2026-08-25",
+            "estado": "cumplida"
+          },
+          {
+            "id": 7,
+            "descripcion": "Revisar y documentar el estado de los cuatro lavaojos del piso 3.",
+            "responsable": "Julian Mendoza",
+            "fechaLimite": "2026-09-20",
+            "estado": "pendiente"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "fecha": "2026-07-18",
+        "hora": "13:00",
+        "laboratorio": "Sintesis Organica",
+        "tipo": "Derrame de sustancia quimica",
+        "descripcion": "Fuga lenta de tolueno desde un recipiente de residuos mal tapado. Se detecto por olor al inicio de la jornada y se ventilo el area antes de reanudar actividades.",
+        "heridos": false,
+        "estado": "cerrado",
+        "prioridad": "media",
+        "accionesCorrectivas": [
+          {
+            "id": 8,
+            "descripcion": "Cambiar los recipientes de residuos organicos por contenedores con tapa de rosca y valvula de alivio.",
+            "responsable": "Andres Cifuentes",
+            "fechaLimite": "2026-08-05",
+            "estado": "cumplida"
+          },
+          {
+            "id": 9,
+            "descripcion": "Establecer ronda de cierre diaria con lista de chequeo de residuos y campanas.",
+            "responsable": "Marcela Ospina",
+            "fechaLimite": "2026-08-10",
+            "estado": "cumplida"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Contencion biologica en cabina clase 2",
+    "imagen": "https://picsum.photos/seed/biologia/400/260",
+    "nivelRiesgo": "alto",
+    "descripcion": "Procedimiento de trabajo, descarte y desinfeccion para manipulacion de agentes biologicos de riesgo 2 dentro de cabina de bioseguridad.",
+    "eppRequeridos": "Bata desechable, doble guante de nitrilo, gafas de seguridad, tapabocas N95",
+    "incidentes": [
+      {
+        "id": 5,
+        "fecha": "2026-08-12",
+        "hora": "09:15",
+        "laboratorio": "Cultivo Celular",
+        "tipo": "Falla de contencion",
+        "descripcion": "La cabina de bioseguridad clase 2 registro flujo laminar por debajo del minimo durante una sesion de cultivo. Se suspendio el trabajo y se sello el equipo.",
+        "heridos": false,
+        "estado": "abierto",
+        "prioridad": "grave",
+        "accionesCorrectivas": [
+          {
+            "id": 10,
+            "descripcion": "Verificar el sellado de la cabina de bioseguridad y renovar su certificacion anual antes de reabrir el espacio.",
+            "responsable": "Andres Cifuentes",
+            "fechaLimite": "2026-08-21",
+            "estado": "pendiente"
+          },
+          {
+            "id": 11,
+            "descripcion": "Reprogramar los cultivos afectados en la cabina de respaldo del laboratorio de Biologia Molecular.",
+            "responsable": "Marcela Ospina",
+            "fechaLimite": "2026-08-18",
+            "estado": "cumplida"
+          },
+          {
+            "id": 12,
+            "descripcion": "Instalar alarma sonora por caida de flujo en las dos cabinas clase 2 de la facultad.",
+            "responsable": "Ricardo Beltran",
+            "fechaLimite": "2026-10-01",
+            "estado": "pendiente"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "fecha": "2026-07-22",
+        "hora": "18:20",
+        "laboratorio": "Microbiologia",
+        "tipo": "Exposicion biologica",
+        "descripcion": "Un cultivo de Escherichia coli se derramo fuera de la campana durante el descarte. Se aplico el protocolo de desinfeccion y no hubo contacto con piel.",
+        "heridos": false,
+        "estado": "cerrado",
+        "prioridad": "baja",
+        "accionesCorrectivas": [
+          {
+            "id": 13,
+            "descripcion": "Reubicar el contenedor de descarte biologico dentro del area de trabajo de la campana.",
+            "responsable": "Julian Mendoza",
+            "fechaLimite": "2026-08-01",
+            "estado": "cumplida"
+          },
+          {
+            "id": 14,
+            "descripcion": "Actualizar el instructivo de descarte con fotos del montaje correcto.",
+            "responsable": "Sandra Piedrahita",
+            "fechaLimite": "2026-08-08",
+            "estado": "cumplida"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "fecha": "2026-07-30",
+        "hora": "11:45",
+        "laboratorio": "Biologia Molecular",
+        "tipo": "Falla de contencion",
+        "descripcion": "El filtro HEPA de la cabina supero las horas de servicio recomendadas sin reemplazo. Se detecto en la revision mensual antes de que hubiera exposicion.",
+        "heridos": false,
+        "estado": "abierto",
+        "prioridad": "media",
+        "accionesCorrectivas": [
+          {
+            "id": 15,
+            "descripcion": "Reemplazar el filtro HEPA y dejar registro en la bitacora del equipo.",
+            "responsable": "Andres Cifuentes",
+            "fechaLimite": "2026-09-01",
+            "estado": "pendiente"
+          },
+          {
+            "id": 16,
+            "descripcion": "Crear plan de mantenimiento preventivo con alertas a 30 dias del vencimiento de filtros.",
+            "responsable": "Marcela Ospina",
+            "fechaLimite": "2026-09-30",
+            "estado": "pendiente"
+          },
+          {
+            "id": 17,
+            "descripcion": "Capacitar a los dos tecnicos nuevos en la revision mensual de cabinas.",
+            "responsable": "Sandra Piedrahita",
+            "fechaLimite": "2026-09-12",
+            "estado": "pendiente"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Operacion segura de equipos a presion",
+    "imagen": "https://picsum.photos/seed/presion/400/260",
+    "nivelRiesgo": "medio",
+    "descripcion": "Verificacion previa, operacion y parada de reactores y autoclaves que trabajan por encima de la presion atmosferica.",
+    "eppRequeridos": "Bata, guantes termicos, careta facial, proteccion auditiva",
+    "incidentes": [
+      {
+        "id": 8,
+        "fecha": "2026-07-29",
+        "hora": "11:05",
+        "laboratorio": "Procesos Quimicos",
+        "tipo": "Falla de equipo",
+        "descripcion": "La valvula de alivio del reactor de sintesis Parr 5500 no abrio en la prueba de presion programada. El equipo quedo fuera de servicio hasta el reemplazo de la valvula.",
+        "heridos": false,
+        "estado": "cerrado",
+        "prioridad": "media",
+        "accionesCorrectivas": [
+          {
+            "id": 18,
+            "descripcion": "Reemplazar la valvula de alivio y adelantar la prueba de presion de los otros dos reactores del laboratorio.",
+            "responsable": "Andres Cifuentes",
+            "fechaLimite": "2026-08-30",
+            "estado": "cumplida"
+          },
+          {
+            "id": 19,
+            "descripcion": "Registrar el historico de pruebas de presion en la hoja de vida de cada equipo.",
+            "responsable": "Julian Mendoza",
+            "fechaLimite": "2026-09-05",
+            "estado": "cumplida"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "fecha": "2026-08-14",
+        "hora": "15:30",
+        "laboratorio": "Instrumentacion",
+        "tipo": "Accidente electrico",
+        "descripcion": "Cortocircuito en la toma de 220 V que alimenta el autoclave. Salto el breaker y no hubo contacto con el operario, pero el equipo quedo sin energia por dos dias.",
+        "heridos": false,
+        "estado": "abierto",
+        "prioridad": "grave",
+        "accionesCorrectivas": [
+          {
+            "id": 20,
+            "descripcion": "Contratar revision de la instalacion electrica del laboratorio y certificar las tomas de 220 V.",
+            "responsable": "Ricardo Beltran",
+            "fechaLimite": "2026-09-18",
+            "estado": "pendiente"
+          },
+          {
+            "id": 21,
+            "descripcion": "Instalar proteccion diferencial dedicada para los equipos de alta potencia.",
+            "responsable": "Andres Cifuentes",
+            "fechaLimite": "2026-10-10",
+            "estado": "pendiente"
+          },
+          {
+            "id": 22,
+            "descripcion": "Prohibir el uso de extensiones multiples para equipos a presion y retirar las existentes.",
+            "responsable": "Marcela Ospina",
+            "fechaLimite": "2026-08-28",
+            "estado": "cumplida"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "fecha": "2026-06-26",
+        "hora": "08:50",
+        "laboratorio": "Materiales",
+        "tipo": "Falla de equipo",
+        "descripcion": "El manometro del autoclave marcaba cero con el equipo presurizado. Se detecto por la valvula de escape antes de abrir la camara.",
+        "heridos": false,
+        "estado": "cerrado",
+        "prioridad": "baja",
+        "accionesCorrectivas": [
+          {
+            "id": 23,
+            "descripcion": "Calibrar los manometros de los tres autoclaves y etiquetarlos con la fecha de proxima calibracion.",
+            "responsable": "Julian Mendoza",
+            "fechaLimite": "2026-07-15",
+            "estado": "cumplida"
+          },
+          {
+            "id": 24,
+            "descripcion": "Agregar verificacion cruzada de presion con sensor digital al procedimiento de apertura.",
+            "responsable": "Sandra Piedrahita",
+            "fechaLimite": "2026-07-20",
+            "estado": "cumplida"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -36,8 +36,8 @@ public class ProtocoloController {
 
     @PostMapping("/protocolos")
     @ResponseStatus (HttpStatus.CREATED)
-    public ProtocoloSeguridadDTO postMethodName(@RequestBody ProtocoloSeguridadDTO protocolo) {
-        log.info("POST /artistas - body recibido: {}", protocolo);
+    public ProtocoloSeguridadDTO crearProtocolo(@RequestBody ProtocoloSeguridadDTO protocolo) {
+        log.info("POST /protocolos - body recibido: {}", protocolo);
         return protocolo;
     }
     

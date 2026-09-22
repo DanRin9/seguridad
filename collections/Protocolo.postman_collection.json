@@ -1,0 +1,91 @@
+{
+  "info": {
+    "_postman_id": "14293067-438e-4eae-a8b5-b86c4ee4d655",
+    "name": "LaboCiencia - Seguridad",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54730205"
+  },
+  "item": [
+    {
+      "name": "GET protocolos",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Devuelve una lista de protocolos\", function () {",
+              "    pm.expect(pm.response.json()).to.be.an(\"array\");",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/protocolos",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "protocolos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST protocolos",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 201\", function () {",
+              "    pm.response.to.have.status(201);",
+              "});",
+              "pm.test(\"Devuelve el protocolo recibido\", function () {",
+              "    pm.expect(pm.response.json().nombre).to.eql(\"Trabajo con gases comprimidos\");",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Trabajo con gases comprimidos\",\n  \"imagen\": \"https://picsum.photos/seed/gases/400/260\",\n  \"nivelRiesgo\": \"medio\",\n  \"descripcion\": \"Procedimiento para transporte, conexion y almacenamiento seguro de cilindros de gases comprimidos.\",\n  \"eppRequeridos\": \"Gafas de seguridad, guantes de cuero, calzado de seguridad\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/protocolos",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "protocolos"
+          ]
+        },
+        "description": "Crea un protocolo de seguridad. En R3 el backend responde 201 con el mismo body y lo imprime en el log; todavia no persiste."
+      },
+      "response": []
+    }
+  ]
+}
